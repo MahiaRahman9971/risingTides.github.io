@@ -126,6 +126,12 @@
                                 Please use the slider below to change the inches in which coastal flooding will occur.</p>
                             <div class="slider-container">
                                 <input type="range" id="layerSlider" min="1" max="300" step="1" value="100">
+                                <div class="slider-labels">
+                                    <span>0 in - Current</span>
+                                    <span>9 in - 2030s</span>
+                                    <span>21 in - 2050s</span>
+                                    <span>36 in - 2070s</span>
+                                </div>
                             </div>
                             <p id="layer-description"></p>
                         </div>
@@ -139,100 +145,37 @@
             <div class="container">
                 <h2 class="mb-5">Who We Are</h2>
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-4">
                         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
                             <img class="img-fluid rounded-circle mb-3" src="img/headshots/narges_headshot_circle.jpg" alt="..." />
                             <h5>Professor Narges Mahyar</h5>
                             <a href="html/narges_bio.html" class="font-weight-light mb-0">Learn More</a>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-4">
                         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
                             <img class="img-fluid rounded-circle mb-3" src="img/headshots/zhutian_headshot_circle.jpg" alt="..." />
                             <h5>Professor Zhu-tian Cheng</h5>
                             <a href="html/zhutian_bio.html" class="font-weight-light mb-0">Learn More</a>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-4">
                         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="img/headshots/jasai_headshot_circle.jpg" alt="..." />
-                            <h5>Jasai Martinez</h5>
-                            <a href="html/jasai_bio.html" class="font-weight-light mb-0">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="img/headshots/sam_headshot_circle.jpg" alt="..." />
-                            <h5>Samuel Kim</h5>
-                            <a href="html/sam_bio.html" class="font-weight-light mb-0">Learn More</a>
-                        </div>
-                    </div>
-<!--                    <div class="col-lg-3">-->
-<!--                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">-->
 <!--                            <img class="img-fluid rounded-circle mb-3" src="img/headshots/narges_headshot_circle.jpg" alt="..." />-->
-<!--                            <h5>Mahia Rahman</h5>-->
-<!--                            <a href="html/narges_bio.html" class="font-weight-light mb-0">Learn More</a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-                </div>
-            </div>
-        </section>
-        <!-- Call to Action-->
-        <section class="call-to-action text-white text-center" id="signup">
-            <div class="container position-relative">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6">
-                        <h2 class="mb-4">Have Any Questions? Submit them here!</h2>
-                        <form class="form-subscribe" id="contactFormFooter" data-sb-form-api-token="API_TOKEN">
-                            <div class="row">
-                                <div class="col">
-                                    <input class="form-control form-control-lg" id="emailAddressBelow" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:required">Email Address is required.</div>
-                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:email">Email Address Email is not valid.</div>
-                                </div>
-                                <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
-                            </div>
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    <p>To activate this form, sign up at</p>
-                                    <a class="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                        </form>
+                            <h5>Mahia Rahman</h5>
+                            <a href="html/narges_bio.html" class="font-weight-light mb-0">Learn More</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- Footer-->
         <footer class="footer bg-light">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
-                        <ul class="list-inline mb-2">
-                            <li class="list-inline-item"><a href="#!">About</a></li>
-                            <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="#!">Contact</a></li>
-                            <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="#!">Terms of Use</a></li>
-                            <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="#!">Privacy Policy</a></li>
-                        </ul>
-                        <p class="text-muted small mb-4 mb-lg-0">&copy; Rising Tides 2023. All Rights Reserved.</p>
                     </div>
                     <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
-                        <ul class="list-inline mb-0">
-                            <li class="list-inline-item me-4">
-                                <a href="#!"><i class="bi-facebook fs-3"></i></a>
-                            </li>
-                            <li class="list-inline-item me-4">
-                                <a href="#!"><i class="bi-twitter fs-3"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#!"><i class="bi-instagram fs-3"></i></a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>

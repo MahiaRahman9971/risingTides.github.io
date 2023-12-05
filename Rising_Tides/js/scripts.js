@@ -1,5 +1,5 @@
-var width = 1000;
-var height = 800;
+var width = 780;
+var height = 700;
 
 // Create Projection
 var bosProjection = d3.geoAlbers()
@@ -46,7 +46,7 @@ layers.forEach((layerClass, index) => {
                 .append("path")
                 .attr("class", layerClass.substring(1))
                 .attr("fill", index === 0 ? "#0c52b9" : index === 1 ? "#114993" : "#062d69")
-                .attr("stroke", "#333")
+                .attr("stroke", "#ff0000")
                 .attr("d", bosGeoPath)
                 // .attr("fill-opacity", 0.4)
                 .style("opacity", 0)
@@ -57,8 +57,18 @@ layers.forEach((layerClass, index) => {
         });
 });
 
+// Zoom behavior
+var zoom = d3.zoom()
+    .scaleExtent([1, 8])
+    .on('zoom', zoomed);
+function zoomed(event) {
+    svg.selectAll('path').attr('transform', event.transform);
+}
+
+svg.call(zoom);
+
 // Add descriptions and titles for each layer
-var layerDetails = {
+let layerDetails = {
     '1': {
         'title': "9-inch Sea Level Rise",
         'description': "The blue layer showcases the potential coastal and riverine flooding in Boston under 9-inches of sea level rise scenarios projected for the 2030s at high tide and in the event of storms with an annual exceedance probability of 10 and 1 percent."

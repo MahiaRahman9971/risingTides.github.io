@@ -166,6 +166,8 @@ h6, .h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-weight: 300;
+  font-size: 1.25rem;
 }
 
 abbr[title] {
@@ -10970,3 +10972,10 @@ footer.footer {
 /*  z-index: -1;*/
 /*  margin: -1rem; !* Expand the box slightly outside the text container *!*/
 /*}*/
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  /*margin-top: 1px;*/
+  font-size: .75rem;
+}
